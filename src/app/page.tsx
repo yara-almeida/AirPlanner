@@ -52,7 +52,7 @@ export default function Home() {
 
                 <div className="items-center justify-between mt-8 w-full flex">
                     <div>
-                        <h1 className="text-left text-7xl font-black text-stone-800">
+                        <h1 className="min-[500px]:text-center text-left text-7xl font-black text-stone-800">
                             Planeje sua viagem com o
                             <span className="text-fuchsia-500">
                                 {" "}
@@ -60,7 +60,7 @@ export default function Home() {
                             </span>
                             .
                         </h1>
-                        <p className="text-lg mt-8 font-bold text-stone-700">
+                        <p className="min-[500px]:text-center text-lg mt-8 font-bold text-stone-700">
                             Nunca foi tão fácil planejar uma viagem.
                             <br />
                             Faça tudo de forma rápida e sem dor de cabeça.
@@ -68,14 +68,14 @@ export default function Home() {
                     </div>
 
                     <Image
-                        className="w-full max-w-2xl"
+                        className="hidden md:block w-full max-w-2xl"
                         src={airplaneSvg}
                         alt="Desenho de um avião sobrevoando a Terra"
                     />
                 </div>
                 <Link
                     href="#hero"
-                    className="font-medium hover:bg-fuchsia-700 transition-colors py-3 px-5 text-white bg-fuchsia-500 rounded-full w-fit mx-auto -mt-20"
+                    className="hidden md:block font-medium hover:bg-fuchsia-700 transition-colors py-3 px-5 text-white bg-fuchsia-500 rounded-full w-fit mx-auto -mt-20"
                 >
                     Começar
                 </Link>
@@ -84,4 +84,4 @@ export default function Home() {
     );
 }
 
-// font-medium hover:bg-fuchsia-700 transition-colors py-3 px-5 text-white bg-fuchsia-500 rounded-full w-fit mx-auto
+
